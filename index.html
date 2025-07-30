@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Pilih cabang Bone Hacker untuk melihat daftar antrian pasien secara real-time." />
+  <link rel="icon" href="https://placehold.co/32x32/007AFF/FFFFFF?text=BH" type="image/png">
+
+  <title>Daftar Antrian - Bone Hacker</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <link rel="preconnect" href="https://rsms.me/">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  
+  <style>
+    :root {
+      /* High-contrast light mode */
+      --bg-main: #e5e7eb; /* Abu-abu lebih gelap */
+      --bg-card: #ffffff;
+      --text-primary: #000000; /* Hitam pekat */
+      --text-secondary: #4b5563; /* Abu-abu teks lebih gelap */
+      --border-color: #d1d5db; /* Border solid */
+      --link-color: #007aff;
+      font-family: 'Inter', sans-serif;
+    }
+
+    html.dark {
+      /* High-contrast dark mode */
+      --bg-main: #000000;
+      --bg-card: #1f2937; /* Kartu lebih terang dari background */
+      --text-primary: #ffffff; /* Teks putih bersih */
+      --text-secondary: #9ca3af; /* Abu-abu teks lebih terang */
+      --border-color: #4b5563; /* Border solid */
+    }
+
+    body {
+      background-color: var(--bg-main);
+      color: var(--text-primary);
+      transition: background-color 0.3s, color 0.3s;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .branch-card {
+        background-color: var(--bg-card);
+        border: 2px solid var(--border-color); /* Border lebih tebal */
+        transition: transform 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    }
+
+    .branch-card:hover {
+        transform: translateY(-5px);
+        border-color: var(--link-color); /* Border berubah jadi biru saat hover */
+        box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.15);
+    }
+    
+    html.dark .branch-card:hover {
+        box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<body class="min-h-screen text-sm">
+  <div class="container mx-auto p-4 max-w-2xl">
+    
+    <header class="mb-8 text-center">
+        <h1 class="text-4xl font-bold" style="color: var(--text-primary);">Daftar Antrian</h1>
+        <p class="mt-2 text-lg" style="color: var(--text-secondary);">Bone Hacker Live Status</p>
+    </header>
+
+    <main class="space-y-4"> <a href="https://bonehacker-id.github.io/daftarantrianpurwokerto/" class="branch-card flex items-center justify-between p-5 rounded-2xl text-base font-semibold">
+        <span style="color: var(--text-primary);">Bone Hacker Purwokerto</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" style="color: var(--text-secondary);" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7" /></svg>
+      </a>
+
+      <a href="https://bonehacker-id.github.io/daftarantrianpurbalingga/" class="branch-card flex items-center justify-between p-5 rounded-2xl text-base font-semibold">
+        <span style="color: var(--text-primary);">Bone Hacker Purbalingga</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" style="color: var(--text-secondary);" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7" /></svg>
+      </a>
+
+      <a href="https://bonehacker-id.github.io/daftarantrianpemalang/" class="branch-card flex items-center justify-between p-5 rounded-2xl text-base font-semibold">
+        <span style="color: var(--text-primary);">Bone Hacker Pemalang</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" style="color: var(--text-secondary);" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7" /></svg>
+      </a>
+      
+      <a href="https://bonehacker-id.github.io/daftarantriancilacap/" class="branch-card flex items-center justify-between p-5 rounded-2xl text-base font-semibold">
+        <span style="color: var(--text-primary);">Bone Hacker Cilacap</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" style="color: var(--text-secondary);" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7" /></svg>
+      </a>
+
+      <a href="https://bonehacker-id.github.io/daftarantriankedungreja/" class="branch-card flex items-center justify-between p-5 rounded-2xl text-base font-semibold">
+        <span style="color: var(--text-primary);">Bone Hacker Kedungreja</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" style="color: var(--text-secondary);" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7" /></svg>
+      </a>
+
+      <a href="https://bonehacker-id.github.io/daftarantrianbatang/" class="branch-card flex items-center justify-between p-5 rounded-2xl text-base font-semibold">
+        <span style="color: var(--text-primary);">Bone Hacker Batang</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" style="color: var(--text-secondary);" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7" /></svg>
+      </a>
+      
+      <a href="https://bonehacker-id.github.io/daftarantrianpekalongan/" class="branch-card flex items-center justify-between p-5 rounded-2xl text-base font-semibold">
+        <span style="color: var(--text-primary);">Bone Hacker Pekalongan</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" style="color: var(--text-secondary);" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7" /></svg>
+      </a>
+
+      <a href="https://bonehacker-id.github.io/daftarantriantasikmalaya/" class="branch-card flex items-center justify-between p-5 rounded-2xl text-base font-semibold">
+        <span style="color: var(--text-primary);">Bone Hacker Tasikmalaya</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" style="color: var(--text-secondary);" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7" /></svg>
+      </a>
+      
+      <a href="https://bonehacker-id.github.io/daftarantrianjogja/" class="branch-card flex items-center justify-between p-5 rounded-2xl text-base font-semibold">
+        <span style="color: var(--text-primary);">Bone Hacker Jogja</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" style="color: var(--text-secondary);" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7" /></svg>
+      </a>
+
+    </main>
+
+    <footer class="text-center mt-8 py-4">
+      <a href="https://linktr.ee/bonehacker" 
+         target="_blank" 
+         rel="noopener" 
+         class="inline-block bg-gray-700 text-white font-bold text-sm px-8 py-3 rounded-lg transition-colors duration-200 hover:bg-gray-800">
+          Info Selengkapnya
+      </a>
+    </footer>
+    
+  </div>
+
+  <script>
+    function setupDarkMode() {
+      const hour = new Date().getHours();
+      const isNight = hour >= 18 || hour < 6;
+      if (isNight) {
+        document.documentElement.classList.add('dark');
+      }
+    }
+    document.addEventListener('DOMContentLoaded', setupDarkMode);
+  </script>
+</body>
+</html>
